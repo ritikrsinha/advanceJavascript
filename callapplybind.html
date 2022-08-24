@@ -45,5 +45,33 @@
 //    var bound = addToThis.bind(obj);
 //    console.dir(bound);
 //    console.log(bound(1,2,3));
+
+// Currying
+// let multiply = function (x,y){
+//   console.log(x * y);
+// }
+
+// let multiplyByTwo = multiply.bind(this, 2, 4);
+// multiplyByTwo(5);
+
+// let multiplyByFour = multiply.bind(this, 4);
+// multiplyByFour(5);
+
+// function closures - currying
+// let multiply = function (x,y){
+//   console.log(x * y);
+// }
+
+let multiply = function (x) {
+   return function (y){
+   console.log(x * y);
+   }
+}
+
+let multiplyByTwo = multiply(2);
+multiplyByTwo(5);
+
+let multiplyByFour = multiply(4);
+multiplyByFour(5);
 </script>
 </html>
