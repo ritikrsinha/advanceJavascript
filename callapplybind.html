@@ -11,15 +11,30 @@
 </body>
 <script>
 // Call 
-    var obj = {
-      num:4
-    };
-    var addToThis = function(a){
-         return this.num + a;
-    }
-    console.log(addToThis.call(obj, 3));
+    // var obj = {num:4};
+    // var addToThis = function(a){
+    //      return this.num + a;
+    // }
+    // console.log(addToThis.call(obj, 6)); // functionName.call(obj, fucntionArg)
 
 // Apply
+    // var obj = {num:4};
+    // var addToThis = function(a, b, c){
+    //      return this.num + a + b + c;
+    // }
+    // console.log(addToThis.call(obj, 6, 8 ,10));
+    // var a = [1,2,3];
+    // console.log(addToThis.apply(obj, a));
 
+// Bind
+// var obj = {num:4};
+// var obj2 = {num:10};  
+
+// function addToThis (a, b, c){
+//          return this.num + a + b + c;
+//     }
+// var a = [1,2,3];
+// console.log(addToThis.apply(obj, a));
+// console.log(addToThis.apply(obj2, a));
 </script>
 </html>
